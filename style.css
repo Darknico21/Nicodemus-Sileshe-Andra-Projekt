@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #0b2011;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.5vw;
+  text-decoration: underline;
+  color: #26b345;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
+}
+
+.img {
+  width: 18vw;
+  border: 1rem solid;
+  border-color: black;
+}
+
+body {
+  background-color: #f1cd67;
+}
+
+.om-oss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1vw;
+  background-color: rgb(144, 231, 29);
+  justify-content: space-evenly;
+  font-size: 3vw;
+}
+
+.img2 {
+  width: 7vw;
+}
+
+button {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  line-height: 2;
+  font-size: 1rem;
+  border-radius: 0.4em;
+  color: #26b345;
+  background-color: black;
+}
+
+button:hover {
+    transform: scale(0.95);
+    background-color: #0d1b10;
+  }
+
+button:active{
+    background-color: rgb(7, 87, 7);
+  }
+
+body {
+  margin: 50px;
+  background: #000000;
+}
+
+@media (max-width: 500px) {
+  .knappar {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .Searchbar {
+    display: none;
+  }
+}
+
+input {
+  display: flex;
+  align-items: center;
+  background-color: #176e2a;
+  color: #000000;
+}
+
+input:hover {
+    background-color: rgb(79, 168, 44);
+}
+
+input:focus {
+    background-color: rgb(30, 189, 123);
+}
+
+input::placeholder {
+  color: #000;
+  font-style:italic;
+}
+
+.chips {
+    display: flex;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.godis {
+    display: flex;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.coca-cola {
+    display: flex;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.redbull {
+    display: flex;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.oss {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.källor {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.följ {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1vw;
+    justify-content: space-evenly;
+    gap: 1em;
+    
+}
+
+.shoppic {
+    width: 13vw;
+}
+
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1vw;
+    background-color: #216133;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1.2%;
+}
+
+.Le-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-chips{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-color: #216133;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1.2%;
+}
+
+.gallery-cola{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-color: #216133;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1.2%;
+}
+
+.gallery-redbull{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-color: #216133;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1.2%;
+}
+
+.gallery-candy{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-color: #216133;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1.2%;
+}
