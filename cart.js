@@ -21,6 +21,17 @@ function printCart() {
     removeBtn.innerHTML = "Delete";
     cartContainer.append(newDiv);
   });
+  cart.forEach((product) => {
+    let newDiv = document.createElement("div");
+    let removeAllBtn = document.createElement("button");
+    removeAllBtn.addEventListener("click", () => {
+      removeAllFromCart(product.name);
+      printCart();
+    });
+    newDiv.append(removeAllBtn);
+    removeAllBtn.innerHTML = "Delete All Of " + (product.name);
+    cartContainer.append(newDiv);
+  });
 }
 
 let addToCartBtn = document.querySelector(".add-to-cart-btn");
@@ -51,6 +62,17 @@ function removeFromCart(name) {
   let test = cart.find((item) => item.name === name);
   if (test) {
     cart[cart.indexOf(test)].amount -= 1;
+    if (cart[cart.indexOf(test)].amount <= 0) {
+      cart.splice(cart.indexOf(test), 1);
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+}
+
+function removeAllFromCart(name) {
+  let test = cart.find((item) => item.name === name);
+  if (test) {
+    cart[cart.indexOf(test)].amount = 0;
     if (cart[cart.indexOf(test)].amount <= 0) {
       cart.splice(cart.indexOf(test), 1);
     }
