@@ -40,18 +40,19 @@
             Select what type of coca cola you would like:
         </h3>
             <p>
-            <input type="checkbox" name="normal coca cola" id="normal coca cola"> Normal coca cola 33cl
-            <input type="checkbox" name="coca cola zero" id="coca cola zero"> Coca cola zero 33cl
-            <input type="checkbox" name="coca cola light" id="coca cola light"> Coca cola light 33cl
-            <input type="checkbox" name="coca cola vanilla" id="coca cola vanilla"> Coca cola vanilla 33cl
-            <input type="checkbox" name="coca cola life" id="coca cola life"> Coca cola life 33cl
-            <input type="checkbox" name="normal coca cola 2l" id="normal coca cola 2 liter"> Normal coca cola 2l
+                <select name="product" id="product">
+                    <option>Coca Cola Normal</option>
+                    <option>Coca Cola Zero</option>
+                    <option>Coca Cola Light</option>
+                    <option>Coca Cola Vanilla</option>
+                    <option>Coca Cola Life</option>
+                </select>
             </p>
 
             <h3>
                 How many?
             </h3>
-            <input class = "how-many-input" type="number" value="0">
+            <input class = "how-many-input" type="number" value="1" min="1">
             <button data-item = "Coca-cola"class = "knappar add-to-cart-btn">
                 Add to basket
             </button>

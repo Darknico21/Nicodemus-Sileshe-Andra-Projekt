@@ -1,28 +1,37 @@
 cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+const cartContainer = document.querySelector(".shopcart");
+
 function printCart() {
+  cartContainer.innerHTML = "";
   cart.forEach((product) => {
     let newDiv = document.createElement("div");
-
-    let newHeading = document.createElement("h2");
-    newHeading.innerHTML = product.name;
-    newDiv.append(newHeading);
-
-    let newAmount = document.createElement("h3");
+    let newAmount = document.createElement("span");
     newAmount.innerHTML = product.amount;
     newDiv.append(newAmount);
-
-    document.querySelector("body").append(newDiv);
+    let newHeading = document.createElement("span");
+    newHeading.innerHTML = product.name;
+    newDiv.append(newHeading);
+    let removeBtn = document.createElement("button");
+    removeBtn.addEventListener("click", () => {
+      removeFromCart(product.name);
+      printCart();
+    });
+    newDiv.append(removeBtn);
+    removeBtn.innerHTML = "Delete";
+    cartContainer.append(newDiv);
   });
 }
 
 let addToCartBtn = document.querySelector(".add-to-cart-btn");
-addToCartBtn.addEventListener("click", (e) => {
-  let item = e.target.getAttribute("data-item");
-  let howMany = parseInt(document.querySelector(".how-many-input").value);
-  addToCart(item, howMany);
-  printCart();
-});
+if (addToCartBtn) {
+  addToCartBtn.addEventListener("click", (e) => {
+    let item = document.querySelector("#product").value;
+    let howMany = parseInt(document.querySelector(".how-many-input").value);
+    addToCart(item, howMany);
+    printCart();
+  });
+}
 
 function addToCart(name, amount) {
   let test = cart.find((item) => item.name === name);
@@ -48,3 +57,5 @@ function removeFromCart(name) {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 }
+
+printCart();

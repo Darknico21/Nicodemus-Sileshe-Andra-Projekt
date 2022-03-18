@@ -63,13 +63,13 @@ button {
 }
 
 button:hover {
-    transform: scale(0.95);
-    background-color: #0d1b10;
-  }
+  transform: scale(0.95);
+  background-color: #0d1b10;
+}
 
-button:active{
-    background-color: rgb(7, 87, 7);
-  }
+button:active {
+  background-color: rgb(7, 87, 7);
+}
 
 body {
   margin: 50px;
@@ -96,136 +96,137 @@ input {
 }
 
 input:hover {
-    background-color: rgb(79, 168, 44);
+  background-color: rgb(79, 168, 44);
 }
 
 input:focus {
-    background-color: rgb(30, 189, 123);
+  background-color: rgb(30, 189, 123);
 }
 
 input::placeholder {
   color: #000;
-  font-style:italic;
+  font-style: italic;
 }
 
 .chips {
-    display: flex;
-    flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .godis {
-    display: flex;
-    flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .coca-cola {
-    display: flex;
-    flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .redbull {
-    display: flex;
-    flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .oss {
-    font-size: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .källor {
-    font-size: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;}
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .följ {
-    font-size: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .socials {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1vw;
-    justify-content: space-evenly;
-    gap: 1em;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1vw;
+  justify-content: space-evenly;
+  gap: 1em;
 }
 
 .shoppic {
-    width: 13vw;
+  overflow-y: scroll;
+  width: 13vw;
 }
 
 .gallery2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1vw;
-    background-color: #216133;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 1.2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
 }
 
 .Le-items {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.gallery-chips{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 1vw;
-    background-color: #216133;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 1.2%;
+.gallery-chips {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
 }
 
-.gallery-cola{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 1vw;
-    background-color: #216133;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 1.2%;
+.gallery-cola {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
 }
 
-.gallery-redbull{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 1vw;
-    background-color: #216133;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 1.2%;
+.gallery-redbull {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
 }
 
-.gallery-candy{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 1vw;
-    background-color: #216133;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 1.2%;
+.gallery-candy {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  background-color: #216133;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 1.2%;
 }

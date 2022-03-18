@@ -40,18 +40,20 @@
             Select what type of redbull you would like:
         </h3>
             <p>
-            <input type="checkbox" name="normal Red bull" id="normal Red bull"> Normal Red bull 33cl
-            <input type="checkbox" name="Red bull blue" id="Red bull blue"> Red bull blue 33cl
-            <input type="checkbox" name="Red bull sugarfree" id="Red bull sugarfree"> Red bull sugarfree 33cl
-            <input type="checkbox" name="Red bull coconut" id="Red bull coconut"> Red bull coconut 33cl
-            <input type="checkbox" name="Red bull yellow" id="Red bull yellow"> Red bull yellow 33cl
-            <input type="checkbox" name="Red bull peach" id="Red bull peach"> Red bull peach 33cl
+                <select name="product" id="product">
+                    <option>Red bull 33cl</option>
+                    <option>Red bull Blue 33cl</option>
+                    <option>Red bull Sugarfree 33cl</option>
+                    <option>Red bull Coconut 33cl</option>
+                    <option>Red bull Yellow 33cl</option>
+                    <option>Red bull Peach 33cl</option>
+                </select>
             </p>
 
             <h3>
                 How many?
             </h3>
-            <input class = "how-many-input" type="number" value="0">
+            <input class = "how-many-input" type="number" value="1" min="1">
             <button data-item = "Redbull" class = "knappar add-to-cart-btn">
                 Add to basket
             </button>
